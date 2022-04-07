@@ -16,6 +16,14 @@ app.listen(8080, function(){ // 8080포트로 서버 열렸을때 실행할 코�
 */
 
 app.get('/hello', function(request,response){
-  response.send('반갑습니다.')
+  response.send('반갑습니다.') 
 
+})
+
+/* 
+  HTML파일 보내기
+  .sendFile(보낼파일경로)
+*/
+app.get('/', function(request,response){
+  response.sendFile(__dirname + '/index.html')
 })
