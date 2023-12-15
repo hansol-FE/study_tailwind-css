@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sizing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 3버전부터 리소스 사이즈가 많이 줄어듬. 3버전을 사용하길.. -->
+  </head>
+  <body>
+    <!-- space-y-8 : 각 요소의 간격 -->
+    <!-- bg-red-200 : red color 숫자가 높아질수록 진해짐 -->
+    <!-- shadow : 그림자, rounded : radius -->
+    <!-- 
+        w-96 : 96%나 96px이 아님, 0.25rem*96임
+        0.25rem이 1이다.
+        1rem은 4다.
+        4의 배수 단위로 
+        https://tailwindcss.com/docs/width
+    -->
+    <div class="space-y-8 bg-red-200">
+      <div class="w-96 h-10 bg-white shadow rounded">w-96</div>
+      <div class="w-80 bg-white shadow rounded">w-80</div>
+      <div class="w-72 bg-white shadow rounded">w-72</div>
+      <div class="w-64 bg-white shadow rounded">w-64</div>
+      <div class="w-60 bg-white shadow rounded">w-60</div>
+      <div class="w-56 bg-white shadow rounded">w-56</div>
+      <div class="w-52 bg-white shadow rounded">w-52</div>
+      <div class="w-48 bg-white shadow rounded">w-48</div>
+    </div>
+  </body>
+</html>
